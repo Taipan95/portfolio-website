@@ -9,7 +9,7 @@ class App extends React.Component{
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title="Title" scroll>
+        <Header className="header-color" title="Sakis Evangelou" scroll>
             <Navigation>
                 <Link to="/portfolio-website/resume">Resume</Link>
                 <Link to="/portfolio-website/aboutme">About Me</Link>
@@ -19,10 +19,10 @@ class App extends React.Component{
         </Header>
         <Drawer title="Title">
             <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/portfolio-website/resume">Resume</Link>
+                <Link to="/portfolio-website/aboutme">About Me</Link>
+                <Link to="/portfolio-website/projects">Projects</Link>
+                <Link to="/portfolio-website/contact">Contact</Link>
             </Navigation>
         </Drawer>
         <Content>

@@ -1,65 +1,97 @@
-.header-color{
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #63159F, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #63159F, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.header-color {
+	background: #6441a5; 
+	background: -webkit-linear-gradient(
+		to right,
+		#63159f,
+		#6441a5
+	); 
+	background: linear-gradient(
+		to right,
+		#63159f,
+		#6441a5
+    ); 
 }
 
-.landing-grid{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-    text-align: center;  
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}   
+.landing-grid {
+	background: #232526;
+	background: -webkit-linear-gradient(to top, #414345, #232526);
+    background: linear-gradient(to top, #414345, #232526);
 
-.avatar-img{
-    height: 250px;
-    margin-top: 5em;
-    border-radius: 20px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.banner-text{
-    background-color: #232526;
-    opacity: 0.8;
-    width: 75%;
-    margin: auto;
-    border-radius: 10px;
+.avatar-img {
+	height: 250px;
+	margin-top: 5em;
+	border-radius: 20px;
 }
 
-.banner-text h1{
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: 66px;
-    font-weight: bold;
-    color: white;
+.banner-text {
+	background-color: rgb(35, 37, 38);
+	opacity: 0.8;
+	width: 75%;
+	margin: auto;
+	border-radius: 10px;
 }
 
-.banner-text hr{
-    border-top: thin solid white;
-    width: 50%;
-    margin: auto;
+.banner-text h1 {
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 66px;
+	font-weight: bold;
+	color: white;
+}
+
+.banner-text hr {
+	border-top: thin solid white;
+	width: 50%;
+	margin: auto;
 }
 
 .banner-text p {
-    color: white;
-    padding: 1em;
-    font-size: 20px;
+	color: white;
+	padding: 1em;
+	font-size: 20px;
 }
 
-.social-links{
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-    margin: auto;
+.social-links {
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+	margin: auto;
 }
 
 .social-links i {
-    color: white;
-    font-size: 5em;
-    
+	color: white;
+	font-size: 5em;
+}
+
+.projects-grid{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-body{
+    margin: auto;
+    background: rgb(35, 37, 38);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.contact-grid{
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    background: white;
 }
