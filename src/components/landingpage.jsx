@@ -14,8 +14,9 @@ class LandingPage extends Component {
 						<div className="banner-text">
 							<h1>Chimi chimi changas</h1>
 							<hr />
-							<p>Maybe | things | work</p>
+							<p> Maybe | things | will | work | now? </p>
 							<div className="social-links">
+								{/* LinkedIn */}
 								<a
 									href="https://www.google.com"
 									rel="noopener noreferrer"
@@ -23,6 +24,17 @@ class LandingPage extends Component {
 								>
 									<i
 										className="fa fa-linkedin-square"
+										aria-hidden="true"
+									/>
+								</a>
+								{/* GitHub */}
+								<a
+									href="https://www.google.com"
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<i
+										className="fa fa-github-square"
 										aria-hidden="true"
 									/>
 								</a>

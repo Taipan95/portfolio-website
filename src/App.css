@@ -17,7 +17,7 @@ background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Fir
 }
 
 .banner-text{
-    background-color: black;
+    background-color: #232526;
     opacity: 0.8;
     width: 75%;
     margin: auto;
@@ -25,13 +25,15 @@ background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Fir
 }
 
 .banner-text h1{
+    padding-left: 20px;
+    padding-top: 20px;
     font-size: 66px;
     font-weight: bold;
     color: white;
 }
 
 .banner-text hr{
-    border-top: 5px dotted white;
+    border-top: thin solid white;
     width: 50%;
     margin: auto;
 }
@@ -40,4 +42,17 @@ background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Fir
     color: white;
     padding: 1em;
     font-size: 20px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: auto;
+}
+
+.social-links i {
+    color: white;
+    font-size: 5em;
+    padding: 8px;
 }
