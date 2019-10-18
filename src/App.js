@@ -1,6 +1,6 @@
 import React from 'react';
+import Main from './components/main';
 import './App.css';
-import Main from './components/main'
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 import {Link} from 'react-router-dom';
 
@@ -9,7 +9,7 @@ class App extends React.Component{
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header title="Title" scroll>
+        <Header className="header-color" title="Title" scroll>
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About Me</Link>
