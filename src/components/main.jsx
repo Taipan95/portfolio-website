@@ -8,11 +8,11 @@ import Projects from "./projects";
 
 const Main = () => (
 	<Switch>
-		<Route exact path="/" component={LandingPage} />
-		<Route path="/aboutme" component={AboutMe} />
-		<Route path="/projects" component={Projects} />
-		<Route path="/contact" component={Contact} />
-		<Route path="/resume" component={Resume} />
+		<Route exact path="/portfolio-website/" component={LandingPage} />
+		<Route path="/portfolio-website/aboutme" component={AboutMe} />
+		<Route path="/portfolio-website/projects" component={Projects} />
+		<Route path="/portfolio-website/contact" component={Contact} />
+		<Route path="/portfolio-website/resume" component={Resume} />
 	</Switch>
 );
 

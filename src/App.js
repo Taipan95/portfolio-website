@@ -11,10 +11,10 @@ class App extends React.Component{
     <Layout>
         <Header className="header-color" title="Title" scroll>
             <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/portfolio-website/resume">Resume</Link>
+                <Link to="/portfolio-website/aboutme">About Me</Link>
+                <Link to="/portfolio-website/projects">Projects</Link>
+                <Link to="/portfolio-website/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Title">
