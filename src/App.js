@@ -19,7 +19,7 @@ class App extends React.Component{
                     </Navigation>
                 </Header>
                 <Drawer className="drawer-color">
-                    <Navigation>
+                    <Navigation className="drawer-color">
                     <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>
