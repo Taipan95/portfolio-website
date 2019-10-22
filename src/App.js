@@ -8,7 +8,7 @@ class App extends React.Component{
   render(){
     return (
         <div className="demo-big-content">
-            <Layout>
+            <Layout >
                 <Header className="header-color" title={<a style={{	color: 'white',
             textDecoration: 'none'}} href="/portfolio-website/">Sakis Evangelou</a>} scroll>
                     <Navigation>
@@ -18,9 +18,9 @@ class App extends React.Component{
                         <Link to="/portfolio-website/aboutme">About Me</Link>  
                     </Navigation>
                 </Header>
-                <Drawer className="drawer-color">
-                    <Navigation className="drawer-color">
-                    <Link to="/portfolio-website/">Home</Link>
+                <Drawer>
+                    <Navigation>
+                        <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>
                         <Link to="/portfolio-website/aboutme">About Me</Link>  

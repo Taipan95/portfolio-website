@@ -3,13 +3,10 @@ import {
 	Tabs,
 	Tab,
 	Grid,
-	Cell,
 	Card,
 	CardTitle,
 	CardActions,
 	CardText,
-	CardMenu,
-	IconButton,
 	Button
 } from "react-mdl";
 
@@ -26,8 +23,12 @@ class Projects extends Component {
 						{/* React project 1: portfolio website */}
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -53,16 +54,17 @@ class Projects extends Component {
 									GitHub
 								</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
+
 						{/* React project 2: OMDB Search*/}
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -88,12 +90,7 @@ class Projects extends Component {
 									GitHub
 								</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
-						{/* Project 3 */}
 					</div>
 				);
 			case 1: // Case 1 == JavaScript
@@ -101,8 +98,12 @@ class Projects extends Component {
 					<div className="projects-grid">
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -121,11 +122,7 @@ class Projects extends Component {
 							<CardActions border>
 								<Button colored>GitHub</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
 					</div>
 				);
 			case 2: // Case 2 == Java
@@ -133,8 +130,12 @@ class Projects extends Component {
 					<div className="projects-grid">
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -153,11 +154,7 @@ class Projects extends Component {
 							<CardActions border>
 								<Button colored>GitHub</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
 					</div>
 				);
 			case 3: // Case 3 == OpenGL
@@ -165,8 +162,12 @@ class Projects extends Component {
 					<div className="projects-grid">
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -185,11 +186,7 @@ class Projects extends Component {
 							<CardActions border>
 								<Button colored>GitHub</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
 					</div>
 				);
 			case 4: // Case 4 == Unity
@@ -197,8 +194,12 @@ class Projects extends Component {
 					<div className="projects-grid">
 						<Card
 							shadow={5}
-							style={{ minWidth: "450", margin: "auto" }}
-							className="project"
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "300px",
+								margin: "1em"
+							}}
 						>
 							<CardTitle
 								style={{
@@ -217,11 +218,7 @@ class Projects extends Component {
 							<CardActions border>
 								<Button colored>GitHub</Button>
 							</CardActions>
-							<CardMenu style={{ color: "#fff" }}>
-								<IconButton name="share" />
-							</CardMenu>
 						</Card>
-						<br className="hide-Desktop" />
 					</div>
 				);
 			default:
@@ -245,10 +242,15 @@ class Projects extends Component {
 					<Tab style={{ color: "white" }}>Unity</Tab>
 				</Tabs>
 
-				<Grid>
-					<Cell col={12} tablet={6} phone={4}>
-						<div className="content">{this.toggleCategories()}</div>
-					</Cell>
+				<Grid
+					col={12}
+					style={{
+						display: "block",
+						width: "100%",
+						textAlign: "center"
+					}}
+				>
+					{this.toggleCategories()}
 				</Grid>
 			</div>
 		);
