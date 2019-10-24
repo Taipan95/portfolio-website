@@ -26,7 +26,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -62,7 +62,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -101,7 +101,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -133,7 +133,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -165,7 +165,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -197,7 +197,7 @@ class Projects extends Component {
 							style={{
 								display: "inline-block",
 								verticalAlign: "middle",
-								width: "300px",
+								width: "250px",
 								margin: "1em"
 							}}
 						>
@@ -235,11 +235,21 @@ class Projects extends Component {
 					onChange={tabId => this.setState({ activeTab: tabId })}
 					ripple
 				>
-					<Tab style={{ color: "white" }}>React</Tab>
-					<Tab style={{ color: "white" }}>JavaScript</Tab>
-					<Tab style={{ color: "white" }}>Java</Tab>
-					<Tab style={{ color: "white" }}>OpenGL</Tab>
-					<Tab style={{ color: "white" }}>Unity</Tab>
+					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+						React
+					</Tab>
+					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+						JavaScript
+					</Tab>
+					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+						Java
+					</Tab>
+					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+						OpenGL
+					</Tab>
+					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+						Unity
+					</Tab>
 				</Tabs>
 
 				<Grid

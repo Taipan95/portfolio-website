@@ -12,9 +12,9 @@ class LandingPage extends Component {
 							className="avatar-img"
 						/>
 						<div className="banner-text">
-							<h1>Chimi chimi changas</h1>
+							<h1>Sakis Evangelou</h1>
 							<hr />
-							<p> Maybe | things | will | work | now? </p>
+							<p> Java | JavaScript | ReactJS | Unity </p>
 							<div className="social-links">
 								{/* LinkedIn */}
 								<a

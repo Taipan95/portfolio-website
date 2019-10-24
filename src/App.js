@@ -15,7 +15,6 @@ class App extends React.Component{
                         <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>
-                        <Link to="/portfolio-website/aboutme">About Me</Link>  
                     </Navigation>
                 </Header>
                 <Drawer>
@@ -23,7 +22,6 @@ class App extends React.Component{
                         <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>
-                        <Link to="/portfolio-website/aboutme">About Me</Link>  
                     </Navigation>
                 </Drawer>
                 <Content>
