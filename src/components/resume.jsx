@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import SkillList from "./skills";
+import Education from "./education";
 
 const skills = [
 	{ skill: "Java", progress: "80" },
@@ -120,29 +121,36 @@ class Resume extends Component {
 							// eslint-disable-next-line
 							background:
 								"linear-gradient(to top, #414345, #292B2C)",
-							borderRadius: "20px",
-							padding: "1em"
+							borderRadius: "20px"
 						}}
 					>
-						<h2>Education:</h2>
+						<h2 style={{ padding: "1em" }}>Education:</h2>
 						{/* EDUCATION */}
+						<Education
+							startYear={2015} 
+							endYear={2019} 
+							schoolName={"Athens University of Economics and Business"} 
+							schoolDescription={"Department of Informatics"}
+						/>
 						<hr
 							style={{
 								borderTop: "3px solid #6441A5",
 								width: "100%"
 							}}
 						/>
-						<h2 style={{ display: "none" }}>Experience:</h2>
+						<h2 style={{ display: "none", padding: "1em" }}>
+							Experience:
+						</h2>
 						<hr
 							style={{
-								borderTop: "3px solid #63159F",
+								borderTop: "3px solid #6440A5",
 								display: "none"
 							}}
 						/>
 
-						<h2>Skills:</h2>
+						<h2 style={{ padding: "1em" }}>Skills:</h2>
 						{/* SKILLS */}
-						<SkillList skills={skills} />
+						<SkillList style={{ padding: "1em" }} skills={skills} />
 					</Cell>
 				</Grid>
 			</div>
