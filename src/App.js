@@ -17,7 +17,7 @@ class App extends React.Component{
                         <Link to="/portfolio-website/resume">Resume</Link>
                     </Navigation>
                 </Header>
-                <Drawer>
+                <Drawer >
                     <Navigation>
                         <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>

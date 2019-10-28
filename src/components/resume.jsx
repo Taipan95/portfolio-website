@@ -4,12 +4,18 @@ import SkillList from "./skills";
 import Education from "./education";
 
 const skills = [
-	{ skill: "Java", progress: "80" },
-	{ skill: "HTML / CSS", progress: "80" },
-	{ skill: "JavaScript", progress: "60" },
-	{ skill: "C#", progress: "60" },
-	{ skill: "ReactJS", progress: "40" },
-	{ skill: "Python", progress: "40" }
+	{ skill: "Java", progress: 80 },
+	{ skill: "HTML / CSS", progress: 80 },
+	{ skill: "JavaScript", progress: 60 },
+	{ skill: "C#", progress: 60 },
+	{ skill: "ReactJS", progress: 40 },
+	{ skill: "MS SQL Server", progress: 60 }
+];
+
+const otherSkills = [
+	{ skill: "Visual Basic", progress: 0 },
+	{ skill: "Android Studio", progress: 0 },
+	{ skill: "Python", progress: 0 }
 ];
 
 class Resume extends Component {
@@ -31,20 +37,7 @@ class Resume extends Component {
 					}}
 				>
 					{/* Left Side */}
-					<Cell
-						col={4}
-						className="resume-left-col"
-						style={{
-							background: "#292B2C",
-							// eslint-disable-next-line
-							background:
-								"-webkit-linear-gradient(to top, #414345, #292B2C)",
-							// eslint-disable-next-line
-							background:
-								"linear-gradient(to top, #414345, #292B2C)",
-							borderRadius: "20px"
-						}}
-					>
+					<Cell col={4} className="resume-left-col">
 						<div style={{ textAlign: "center" }}>
 							<img
 								style={{
@@ -110,26 +103,30 @@ class Resume extends Component {
 					</Cell>
 
 					{/* Right Side */}
-					<Cell
-						col={8}
-						className="resume-right-col"
-						style={{
-							background: "#292B2C",
-							// eslint-disable-next-line
-							background:
-								"-webkit-linear-gradient(to top, #414345, #292B2C)",
-							// eslint-disable-next-line
-							background:
-								"linear-gradient(to top, #414345, #292B2C)",
-							borderRadius: "20px"
-						}}
-					>
-						<h2 style={{ padding: "1em" }}>Education:</h2>
+					<Cell col={8} className="resume-right-col">
+						<h3>Education:</h3>
 						{/* EDUCATION */}
 						<Education
-							startYear={2015} 
-							endYear={2019} 
-							schoolName={"Athens University of Economics and Business"} 
+							startYear={2011}
+							endYear={2013}
+							schoolName={"Archbishop Makarios III Lyceum"}
+							schoolDescription={""}
+						/>
+
+						<hr
+							style={{
+								borderTop: "3px solid #6440A5",
+								marginLeft: "5em",
+								width: "80%"
+							}}
+						/>
+
+						<Education
+							startYear={2015}
+							endYear={2019}
+							schoolName={
+								"Athens University of Economics and Business"
+							}
 							schoolDescription={"Department of Informatics"}
 						/>
 						<hr
@@ -138,19 +135,44 @@ class Resume extends Component {
 								width: "100%"
 							}}
 						/>
-						<h2 style={{ display: "none", padding: "1em" }}>
+						<h3>Military Service:</h3>
+						<Education
+							startYear={2013}
+							endYear={2015}
+							schoolName={"Cypriot National Guard"}
+							schoolDescription={""}
+						/>
+
+						<hr
+							style={{
+								borderTop: "3px solid #6441A5",
+								width: "100%"
+							}}
+						/>
+
+						<h3 style={{ display: "none", padding: "1em" }}>
 							Experience:
-						</h2>
+						</h3>
 						<hr
 							style={{
 								borderTop: "3px solid #6440A5",
 								display: "none"
 							}}
 						/>
-
-						<h2 style={{ padding: "1em" }}>Skills:</h2>
+						<h3>Skills:</h3>
 						{/* SKILLS */}
 						<SkillList style={{ padding: "1em" }} skills={skills} />
+						<hr
+							style={{
+								borderTop: "3px solid #6440A5",
+								width: "100%"
+							}}
+						/>
+						<h3>Other Skills:</h3>
+						<SkillList
+							style={{ padding: "1em" }}
+							skills={otherSkills}
+						/>
 					</Cell>
 				</Grid>
 			</div>

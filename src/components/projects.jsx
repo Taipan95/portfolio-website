@@ -9,6 +9,7 @@ import {
 	CardText,
 	Button
 } from "react-mdl";
+import ReadMore from "./readmore";
 
 class Projects extends Component {
 	constructor(props) {
@@ -41,8 +42,9 @@ class Projects extends Component {
 								Portfolio Website
 							</CardTitle>
 							<CardText>
-								A website made with ReactJS to show my
-								repositories in a more organised manner.
+								<ReadMore
+									text={`A website made with ReactJS to show my repositories in a more organised manner.`}
+								/>
 							</CardText>
 							<CardActions border>
 								<Button
@@ -77,8 +79,11 @@ class Projects extends Component {
 								OMDB Search
 							</CardTitle>
 							<CardText>
-								A project using OMDB to search for movies by
-								title.
+								<ReadMore
+									text={
+										"A project using OMDB to search for movies by title. "
+									}
+								/>
 							</CardText>
 							<CardActions border>
 								<Button
@@ -107,20 +112,30 @@ class Projects extends Component {
 						>
 							<CardTitle
 								style={{
-									color: "black",
+									color: "white",
 									height: "176px",
 									background:
 										"url(https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png) center / cover"
 								}}
 							>
-								JavaScript Project #1
+								OMDB Website
 							</CardTitle>
 							<CardText>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
+								<ReadMore
+									text={
+										"A simple website made with JavaScript, using OMDB API to search for movies, implemented in 3 different ways for practice, Bootstrap, CSS Grid and JQueryUI."
+									}
+								/>
 							</CardText>
 							<CardActions border>
-								<Button colored>GitHub</Button>
+								<Button
+									colored
+									href={
+										"https://github.com/Taipan95/Movie-Search-website"
+									}
+								>
+									GitHub
+								</Button>
 							</CardActions>
 						</Card>
 					</div>
@@ -142,24 +157,27 @@ class Projects extends Component {
 									color: "black",
 									height: "176px",
 									background:
-										"url(data:image/jpeg;base64,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) center / cover"
+										"url(https://regmedia.co.uk/2013/01/30/java_logo.jpg)"
 								}}
 							>
-								Java Project #1
+								Distributed Systems: Matrix factorization
 							</CardTitle>
 							<CardText>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
+								<ReadMore
+									text={
+										"A Java Master-Workers project made for university under the course of Distributed Systems."
+									}
+								/>
 							</CardText>
 							<CardActions border>
-								<Button colored>GitHub</Button>
+								<Button
+									href="https://github.com/Taipan95/Distributed-Systems-Java-Project"
+									colored
+								>
+									GitHub
+								</Button>
 							</CardActions>
 						</Card>
-					</div>
-				);
-			case 3: // Case 3 == OpenGL
-				return (
-					<div className="projects-grid">
 						<Card
 							shadow={5}
 							style={{
@@ -174,22 +192,65 @@ class Projects extends Component {
 									color: "black",
 									height: "176px",
 									background:
-										"url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUAAAD///8/Pz91dXVYWFgkJCQpKSn39/f7+/tiYmJSUlJycnKIiIhlZWXi4uKOjo7w8PAYGBiurq6np6c3NzfW1tYyMjKUlJR/f39CQkJaWlrNzc2+vr4eHh7s7OwRERG4uLjHx8ednZ1ISEj2Yk6TAAAE50lEQVR4nO2d4ZKqMAyFKSqi6Kq4KIq7su77v+MVGdemVCCtXIpzvr+lmRyBNklL9YQQYXzceO/H5hiHV3WeEFnfrnRIUih8Z4GFRE/07UO3nIW37duHjsm9375d6JhZ3w50zlffDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi6/5bJQu0mj2jh+8TxanDyGxzrbv9N27f/kWOrJR3569hvRDK68k/uzbPWtW0xp9txt56NtFK6ImfQWn4Z7mEyQt9BWs+vbUkFVLfVeSQd7GU3uBVwY4d9SNoJwndROtUrMBd5euRhNzAQ1M1kyBTySeyych4Q+4fnbreepIY9BmDFXR3Kndn50l04PjvWPYyYz7ZaBPiLxqSPqhdiwPgkfH6UskKeiDtCaqrlykVt4Zaj9Szw6O7tJPg9NsH/m39t9RrB2HKobIL3XmuCB3XL9GlcRFaDgd6UW7S3UsUg1tSOuc4cK8/pezhFovyXUHaM2UG/mhXjAhzZxEZEx6BuZitFRfwuzZAWELctlebXZUYfUZjWquzh6XVV8XNxVWJop1/TC//buwOqm7qTBXBH43dViWI06i+SGcVEidaiHwynK/3fvNxhxRuCWmRciaxFScVBhShWMrYy4qHFGBsZ01FxVmxLJtzOuiQnoLU0trDipcEsPWEa+DCulIerE1R6OHutBIhSp8YZpP0yaD42qDgy9BY/jFp9ymZu470hiRnnO5zbe6o8RuJVVo5MKqfeSPW7OJOR1Di4eLGOKm1gG7eHWvQI6bL6VMeSWRB0dihvPeFBgUr8p1yE9+R9NYiz79zAKgGrK3oXwRuJXZgpOZwpQYYXY2cLO8ib9GPf+/wuMTT+opygJ7o57c+qu9wuiJJ/UUga+28NWIWbxF425eX139qpli3GcscUlwx8ESeh+YM6uRn0WF8WDU00igNyM2mLnhIMbSgBjhPukGfpZFYt+gp+kfIBAjObPzjj3l38fDWfOllFBbFmoDKQa3KUJR4vCZSzpOj9ArYK03hxalB5riG/xQJH2ozS1U46StNrewWk+kk6/1qpaD+SH90a2XJh3M8ZX8oLLUwsRFhfSNDy2tuahQGbcN59U7LipU01izCP6OkwrVVMZqGHNSoRp7rVtsWFtu8712kd5NhWq2tm6KAKOyAPWt0eimQnX1SUzr6zWPOmD1nXVUId19UFCTZEzkzKfyzjqqUJOuZc/KkzQ9z9VmVxXq0rVY9zZGyr6USoDgqkJ94SRTAmdfU8JXDZ1JK2ePbbd7oui2OYnkEt0yl8lycdJW8CuGyE1mbZSWO3axOdGkcqJT6OzeRKM1CG0UK9nhJa5Sycg2/tez4W+C1tYEPv9mV25987Ec3dEXK2f+JlrtPu+vsjDywf/a7VC+Kll3e9nbfk1yZ/HETpCuFmalMX+xSl8+Ucjw1mU5+2OdIW0Wdiex2h3WH5usWVvtEzoAZm0GnLxvL+1Im+aNn04Hg/9CVDeqxqa7ItxisteGcdOfN/kO+MY5ihM5lFv/7If9dewT3vl7fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwYqCHdLTm7Nn9h5P7jL1ODpZyiNjr5mQpdxAe81yxoZFcFb61xEQUCkW4HeSxTo3Mb2db/QMtvTJo60R1jgAAAABJRU5ErkJggg==) center / cover"
+										"url(https://regmedia.co.uk/2013/01/30/java_logo.jpg)"
 								}}
 							>
-								OpenGL Project #1
+								Distributed Systems: Android Application
 							</CardTitle>
 							<CardText>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
+								<ReadMore
+									text={
+										"An Android Application made using Android Studio for the course of Distributed Systems. It uses the data calculated by the previous Master-Workers system to mark the k-top recommended places for a given user."
+									}
+								/>
 							</CardText>
 							<CardActions border>
-								<Button colored>GitHub</Button>
+								<Button
+									href="https://github.com/Taipan95/Distributed-Systems-Java-Project"
+									colored
+								>
+									GitHub
+								</Button>
+							</CardActions>
+						</Card>
+						<Card
+							shadow={5}
+							style={{
+								display: "inline-block",
+								verticalAlign: "middle",
+								width: "250px",
+								margin: "1em"
+							}}
+						>
+							<CardTitle
+								style={{
+									color: "black",
+									height: "176px",
+									background:
+										"url(https://regmedia.co.uk/2013/01/30/java_logo.jpg)"
+								}}
+							>
+								Elastic Search
+							</CardTitle>
+							<CardText>
+								<ReadMore
+									text={
+										"A Java Master-Workers project made for university under the course of Distributed Systems."
+									}
+								/>
+							</CardText>
+							<CardActions border>
+								<Button
+									href="https://github.com/Taipan95/Distributed-Systems-Java-Project"
+									colored
+								>
+									GitHub
+								</Button>
 							</CardActions>
 						</Card>
 					</div>
 				);
-			case 4: // Case 4 == Unity
+			case 3: // Case 3 == Unity
 				return (
 					<div className="projects-grid">
 						<Card
@@ -212,8 +273,11 @@ class Projects extends Component {
 								Unity Project #1
 							</CardTitle>
 							<CardText>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
+								<ReadMore
+									text={
+										"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+									}
+								/>
 							</CardText>
 							<CardActions border>
 								<Button colored>GitHub</Button>
@@ -243,9 +307,6 @@ class Projects extends Component {
 					</Tab>
 					<Tab style={{ color: "white", fontSize: "0.8em" }}>
 						Java
-					</Tab>
-					<Tab style={{ color: "white", fontSize: "0.8em" }}>
-						OpenGL
 					</Tab>
 					<Tab style={{ color: "white", fontSize: "0.8em" }}>
 						Unity

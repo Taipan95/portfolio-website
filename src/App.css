@@ -18,6 +18,10 @@
 	overflow-y: scroll;
 }
 
+.material-icons {
+	color: white;
+}
+
 .banner-text {
 	background-color: rgb(35, 37, 38);
 	opacity: 0.8;
@@ -38,6 +42,10 @@
 		background: #6441a5;
 		background: -webkit-linear-gradient(to right, #63159f, #6441a5);
 		background: linear-gradient(to right, #63159f, #6441a5);
+	}
+
+	.resume-page {
+		padding-top: 3em;
 	}
 }
 
@@ -110,3 +118,20 @@
 		margin-bottom: 0.25em;
 	}
 }
+
+.resume-left-col {
+	background: #292b2c;
+	background: -webkit-linear-gradient(to top, #414345, #292b2c);
+	background: linear-gradient(to top, #414345, #292b2c);
+	border-radius: 20px;
+}
+.resume-right-col {
+	background: #292b2c;
+	background: -webkit-linear-gradient(to top, #414345, #292b2c);
+	background: linear-gradient(to top, #414345, #292b2c);
+	border-radius: 20px;
+}
+.resume-right-col h3 {
+	padding: 1em;
+}
+

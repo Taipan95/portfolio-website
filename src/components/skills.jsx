@@ -2,6 +2,18 @@ import React, { Component } from "react";
 import { Grid, Cell, ProgressBar } from "react-mdl";
 
 class Skill extends Component {
+	progressBar = props => {
+		if (props > 0) {
+			return (
+				<ProgressBar
+					style={{ margin: "auto", width: "75%" }}
+					progress={props}
+				/>
+			);
+		} else {
+			return null;
+		}
+	};
 	render() {
 		const skill = this.props;
 		return (
@@ -9,10 +21,7 @@ class Skill extends Component {
 				<Cell col={2}>
 					<h6>{skill.skill}</h6>
 				</Cell>
-				<ProgressBar
-					style={{ margin: "auto", width: "75%" }}
-					progress={skill.progress}
-				/>
+				{this.progressBar(skill.progress)}
 			</div>
 		);
 	}
