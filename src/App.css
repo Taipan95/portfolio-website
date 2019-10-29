@@ -36,6 +36,16 @@
 	margin: auto;
 }
 
+@media only screen and (min-width: 1025px) {
+	.mdl-layout__drawer-button {
+		display: none !important;
+	}
+
+	.mdl-layout__header-row {
+		padding: 0px 40px 0px 40px !important;
+	}
+}
+
 @media only screen and (max-width: 1024px) {
 	.categories-tabs {
 		padding-top: 3em;
@@ -46,6 +56,24 @@
 
 	.resume-page {
 		padding-top: 3em;
+	}
+
+	.mdl-navigation__link {
+		color: #dedede !important;
+	}
+
+	.mdl-navigation__link:hover {
+		background-color: #5b1492 !important;
+	}
+	.mdl-layout__drawer {
+		border-right: none !important;
+		background: #6441a5 !important;
+		background: -webkit-linear-gradient(
+			to bottom,
+			#63159f,
+			#6441a5
+		) !important;
+		background: linear-gradient(to bottom, #63159f, #6441a5) !important;
 	}
 }
 
@@ -134,4 +162,3 @@
 .resume-right-col h3 {
 	padding: 1em;
 }
-

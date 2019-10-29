@@ -9,16 +9,15 @@ class App extends React.Component{
     return (
         <div className="demo-big-content">
             <Layout >
-                <Header className="header-color" title={<a style={{	color: 'white',
-            textDecoration: 'none'}} href="/portfolio-website/">Sakis Evangelou</a>} scroll>
+                <Header className="header-color" title={"Sakis Evangelou"} scroll>
                     <Navigation>
                         <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>
                     </Navigation>
                 </Header>
-                <Drawer >
-                    <Navigation>
+                <Drawer className="drawer-color" >
+                    <Navigation className="navbar-color">
                         <Link to="/portfolio-website/">Home</Link>
                         <Link to="/portfolio-website/projects">Projects</Link>
                         <Link to="/portfolio-website/resume">Resume</Link>

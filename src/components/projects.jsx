@@ -41,7 +41,7 @@ class Projects extends Component {
 							>
 								Portfolio Website
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={`A website made with ReactJS to show my repositories in a more organised manner.`}
 								/>
@@ -78,7 +78,7 @@ class Projects extends Component {
 							>
 								OMDB Search
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"A project using OMDB to search for movies by title. "
@@ -120,7 +120,7 @@ class Projects extends Component {
 							>
 								OMDB Website
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"A simple website made with JavaScript, using OMDB API to search for movies, implemented in 3 different ways for practice, Bootstrap, CSS Grid and JQueryUI."
@@ -162,7 +162,7 @@ class Projects extends Component {
 							>
 								Distributed Systems: Matrix factorization
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"A Java Master-Workers project made for university under the course of Distributed Systems."
@@ -197,7 +197,7 @@ class Projects extends Component {
 							>
 								Distributed Systems: Android Application
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"An Android Application made using Android Studio for the course of Distributed Systems. It uses the data calculated by the previous Master-Workers system to mark the k-top recommended places for a given user."
@@ -232,7 +232,7 @@ class Projects extends Component {
 							>
 								Elastic Search
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"A Java Master-Workers project made for university under the course of Distributed Systems."
@@ -272,7 +272,7 @@ class Projects extends Component {
 							>
 								Unity Project #1
 							</CardTitle>
-							<CardText>
+							<CardText style={{ minHeight: "80px" }}>
 								<ReadMore
 									text={
 										"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -299,16 +299,40 @@ class Projects extends Component {
 					onChange={tabId => this.setState({ activeTab: tabId })}
 					ripple
 				>
-					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+					<Tab
+						style={{
+							color: "white",
+							fontSize: "1em",
+							fontWeight: "normal"
+						}}
+					>
 						React
 					</Tab>
-					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+					<Tab
+						style={{
+							color: "white",
+							fontSize: "1em",
+							fontWeight: "normal"
+						}}
+					>
 						JavaScript
 					</Tab>
-					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+					<Tab
+						style={{
+							color: "white",
+							fontSize: "1em",
+							fontWeight: "normal"
+						}}
+					>
 						Java
 					</Tab>
-					<Tab style={{ color: "white", fontSize: "0.8em" }}>
+					<Tab
+						style={{
+							color: "white",
+							fontSize: "1em",
+							fontWeight: "normal"
+						}}
+					>
 						Unity
 					</Tab>
 				</Tabs>

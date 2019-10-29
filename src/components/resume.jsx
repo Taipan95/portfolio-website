@@ -95,7 +95,7 @@ class Resume extends Component {
 							<p>sakis_95@live.com </p>
 							<h5>GitHub:</h5>
 							<p style={{ color: "white" }}>
-								<a href="https://GitHub.com/Taipan95">
+								<a href="https://github.com/Taipan95">
 									https://GitHub.com/Taipan95
 								</a>
 							</p>
