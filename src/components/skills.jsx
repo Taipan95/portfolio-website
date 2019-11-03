@@ -17,7 +17,7 @@ class Skill extends Component {
 	render() {
 		const skill = this.props;
 		return (
-			<div style={{ display: "flex" }}>
+			<div style={{ display: "flex", padding: "0em 0em 0em 2em" }}>
 				<Cell col={2}>
 					<h6>{skill.skill}</h6>
 				</Cell>

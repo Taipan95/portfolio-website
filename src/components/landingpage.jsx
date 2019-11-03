@@ -17,6 +17,7 @@ class LandingPage extends Component {
 							<p> Java | JavaScript | ReactJS | Unity </p>
 							<div className="social-links">
 								{/* LinkedIn */}
+
 								<a
 									href="https://www.linkedin.com/in/sakis-evangelou-37390617a/"
 									rel="noopener noreferrer"
@@ -27,6 +28,7 @@ class LandingPage extends Component {
 										aria-hidden="true"
 									/>
 								</a>
+
 								{/* GitHub */}
 								<a
 									href="https://github.com/Taipan95"

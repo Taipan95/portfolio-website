@@ -110,6 +110,10 @@
 		font-size: 3em;
 		margin-bottom: 0.25em;
 	}
+
+	.social-links i:hover {
+		color: blue;
+	}
 }
 
 @media only screen and (min-width: 901px) {
@@ -160,5 +164,8 @@
 	border-radius: 20px;
 }
 .resume-right-col h3 {
-	padding: 1em;
+	padding-left: 1em;
+}
+.resume-right-col h4 {
+	padding-left: 2em;
 }

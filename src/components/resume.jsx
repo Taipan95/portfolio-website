@@ -2,20 +2,27 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import SkillList from "./skills";
 import Education from "./education";
+import GoalList from "./goals";
 
 const skills = [
 	{ skill: "Java", progress: 80 },
 	{ skill: "HTML / CSS", progress: 80 },
 	{ skill: "JavaScript", progress: 60 },
 	{ skill: "C#", progress: 60 },
-	{ skill: "ReactJS", progress: 40 },
-	{ skill: "MS SQL Server", progress: 60 }
+	{ skill: "MS SQL Server", progress: 60 },
+	{ skill: "ReactJS", progress: 50 }
 ];
 
 const otherSkills = [
 	{ skill: "Visual Basic", progress: 0 },
 	{ skill: "Android Studio", progress: 0 },
 	{ skill: "Python", progress: 0 }
+];
+
+const goalsSkills = [
+	{ goal: "Xamarin" },
+	{ goal: "MongoDB" },
+	{ goal: "Angular" }
 ];
 
 class Resume extends Component {
@@ -37,7 +44,12 @@ class Resume extends Component {
 					}}
 				>
 					{/* Left Side */}
-					<Cell col={4} className="resume-left-col">
+					<Cell
+						col={4}
+						phone={6}
+						tablet={8}
+						className="resume-left-col"
+					>
 						<div style={{ textAlign: "center" }}>
 							<img
 								style={{
@@ -52,7 +64,9 @@ class Resume extends Component {
 							<h2 style={{ paddingTop: "1em", color: "white" }}>
 								Athanasios Evangelou
 							</h2>
-							<h4 style={{ color: "grey" }}>Graduate Student</h4>
+							<h4 style={{ color: "grey" }}>
+								Junior Full Stack Developer
+							</h4>
 							<hr
 								style={{
 									borderTop: "3px solid #63159F"
@@ -65,22 +79,34 @@ class Resume extends Component {
 									textAlign: "start"
 								}}
 							>
-								Growing up I fell in love with the Computer
-								Science and its countless, endless
-								possibilities. I always found myself striving to
-								learn, practice and eventually master skills
-								such as various programming languages and
-								database management tools. Consequently, this
-								led me to pursue my studies in the Department of
-								Informatics of Athens University of Economics
-								and Business. After graduating, I am constantly
-								trying to learn new skills and to improve
-								myself.
-								<br />I firmly believe that I have the passion,
-								discipline and ambition to succeed in such a
-								demanding area as computer science where I
-								desire to achieve and succeed.
+								Growing up I fell in love with what the world of
+								Computer Science has to offer, with a few lines
+								of code and a lot of dedication almost anything
+								is possible.
+								<br /> I always found myself striving to learn,
+								and continuously improve my skills, as well as
+								setting new goals for myself.
+								<br />
+								I recently became fascinated by Web Programming
+								and Front End Development in general. I see it
+								as a way to express my creativity, as well as a
+								way to directly demonstrate my skills and
+								capabilities both as a programmer and as a
+								designer.
+								<br />
 							</p>
+							<h5
+								style={{
+									textAlign: "left",
+									paddingLeft: "1em"
+								}}
+							>
+								Goals:
+							</h5>
+							<GoalList
+								style={{ paddingLeft: "1em" }}
+								goals={goalsSkills}
+							/>
 							<hr
 								style={{
 									borderTop: "3px solid #63159F"
@@ -103,76 +129,92 @@ class Resume extends Component {
 					</Cell>
 
 					{/* Right Side */}
-					<Cell col={8} className="resume-right-col">
-						<h3>Education:</h3>
-						{/* EDUCATION */}
-						<Education
-							startYear={2011}
-							endYear={2013}
-							schoolName={"Archbishop Makarios III Lyceum"}
-							schoolDescription={""}
-						/>
+					<Cell
+						col={8}
+						phone={6}
+						tablet={8}
+						className="resume-right-col"
+					>
+						{/* Education section */}
+						<>
+							<h3>Education:</h3>
+							{/* EDUCATION */}
+							<Education
+								startYear={2011}
+								endYear={2013}
+								schoolName={"Archbishop Makarios III Lyceum"}
+								schoolDescription={""}
+							/>
 
-						<hr
-							style={{
-								borderTop: "3px solid #6440A5",
-								marginLeft: "5em",
-								width: "80%"
-							}}
-						/>
+							<hr
+								style={{
+									borderTop: "3px solid #6440A5",
+									marginLeft: "5em",
+									width: "80%"
+								}}
+							/>
 
-						<Education
-							startYear={2015}
-							endYear={2019}
-							schoolName={
-								"Athens University of Economics and Business"
-							}
-							schoolDescription={"Department of Informatics"}
-						/>
+							<Education
+								startYear={2015}
+								endYear={2019}
+								schoolName={
+									"Athens University of Economics and Business"
+								}
+								schoolDescription={"Department of Informatics"}
+							/>
+							<hr
+								style={{
+									borderTop: "3px solid #6441A5",
+									width: "100%"
+								}}
+							/>
+							<h3>Military Service:</h3>
+							<Education
+								startYear={2013}
+								endYear={2015}
+								schoolName={"Cypriot National Guard"}
+								schoolDescription={""}
+							/>
+						</>
 						<hr
 							style={{
 								borderTop: "3px solid #6441A5",
 								width: "100%"
 							}}
 						/>
-						<h3>Military Service:</h3>
-						<Education
-							startYear={2013}
-							endYear={2015}
-							schoolName={"Cypriot National Guard"}
-							schoolDescription={""}
-						/>
 
-						<hr
-							style={{
-								borderTop: "3px solid #6441A5",
-								width: "100%"
-							}}
-						/>
+						{/*Experience section*/}
+						<>
+							<h3 style={{ display: "none", padding: "1em" }}>
+								Experience:
+							</h3>
+							<hr
+								style={{
+									borderTop: "3px solid #6440A5",
+									display: "none"
+								}}
+							/>
+						</>
 
-						<h3 style={{ display: "none", padding: "1em" }}>
-							Experience:
-						</h3>
-						<hr
-							style={{
-								borderTop: "3px solid #6440A5",
-								display: "none"
-							}}
-						/>
-						<h3>Skills:</h3>
-						{/* SKILLS */}
-						<SkillList style={{ padding: "1em" }} skills={skills} />
-						<hr
-							style={{
-								borderTop: "3px solid #6440A5",
-								width: "100%"
-							}}
-						/>
-						<h3>Other Skills:</h3>
-						<SkillList
-							style={{ padding: "1em" }}
-							skills={otherSkills}
-						/>
+						{/* Skills Section */}
+						<>
+							<h3>Skills:</h3>
+							{/* Programming skills */}
+							<h4>Programming Skills:</h4>
+							<SkillList skills={skills} />
+							<hr
+								style={{
+									borderTop: "3px solid #6440A5",
+									marginLeft: "5em",
+									width: "80%"
+								}}
+							/>
+							<h4>Other Skills:</h4>
+							<SkillList
+								style={{ paddingLeft: "1em" }}
+								skills={otherSkills}
+							/>
+						</>
 					</Cell>
 				</Grid>
 			</div>
