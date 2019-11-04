@@ -14,9 +14,10 @@ const skills = [
 ];
 
 const otherSkills = [
-	{ skill: "Visual Basic", progress: 0 },
-	{ skill: "Android Studio", progress: 0 },
-	{ skill: "Python", progress: 0 }
+	{ goal: "Visual Basic" },
+	{ goal: "Android Studio" },
+	{ goal: "Python" },
+	{ goal: "Adobe Photoshop" }
 ];
 
 const goalsSkills = [
@@ -210,9 +211,12 @@ class Resume extends Component {
 								}}
 							/>
 							<h4>Other Skills:</h4>
-							<SkillList
-								style={{ paddingLeft: "1em" }}
-								skills={otherSkills}
+							<GoalList
+								styleProp={{
+									paddingLeft: "1em",
+									marginBottom: "1em"
+								}}
+								goals={otherSkills}
 							/>
 						</>
 					</Cell>

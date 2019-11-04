@@ -6,7 +6,7 @@ class Goal extends Component {
 		const goal = this.props;
 		return (
 			<Cell>
-				<h6 style={{ margin: "0" }}>{goal.goal}</h6>
+				<h6 style={{ marginTop: "0" }}>{goal.goal}</h6>
 			</Cell>
 		);
 	}
@@ -16,7 +16,7 @@ class GoalList extends Component {
 	i = 0;
 	render() {
 		return (
-			<Grid style={{ padding: "0 0 0 1em", margin: "0" }}>
+			<Grid style={{ padding: "0 0 0 1em" }}>
 				{this.props.goals.map(goal => (
 					<Goal key={this.i++} {...goal} />
 				))}
