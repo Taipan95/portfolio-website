@@ -20,7 +20,7 @@ export default function ProjectItem({
                     alt={name}
                     className='aspect-video overflow-hidden object-cover object-center'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-50' />
+                <div className='absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-30' />
                 <CardContent className='p-4 space-y-2 relative flex flex-col flex-1'>
                     <h3 className='text-xl font-bold'>{name}</h3>
                     <p className='text-muted-foreground flex-1'>{short_description}</p>
