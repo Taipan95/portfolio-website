@@ -9,7 +9,7 @@ export default function WorkSection({ cards }: { cards: WorkExperience[] }) {
                     <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
                         Work Experience
                     </h2>
-                    <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {cards?.map((card, index) => (
                             <WorkItem key={index} {...card} />
                         ))}
