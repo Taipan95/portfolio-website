@@ -28,6 +28,16 @@ export default async function WorkItemPage({ params }: IProps) {
                                 {workItemData.short_description}
                             </p>
                         </div>
+                        <PortableText
+                            value={workItemData.content}
+                            components={{
+                                listItem: ({ children }) => (
+                                    <li className='list-disc ml-4'>
+                                        {children}
+                                    </li>
+                                ),
+                            }}
+                        />
                         <Link
                             href={workItemData.url}
                             className='w-fit inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
@@ -47,7 +57,6 @@ export default async function WorkItemPage({ params }: IProps) {
                     </div>
                 </div>
             </div>
-            <PortableText value={workItemData.content} />
         </main>
     );
 }
