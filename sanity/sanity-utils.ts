@@ -63,3 +63,26 @@ export const getProject = async (slug: string): Promise<Project> => {
         { slug },
     );
 };
+
+export const getPages = async (): Promise<Project[]> => {
+    return client.fetch(groq`*[_type=="page"]{
+        _id,
+        _createdAt,
+        "slug": slug.current,
+        "image": image.asset->url,
+        content
+    }`);
+};
+
+export const getPage = async (slug: string): Promise<Project> => {
+    return client.fetch(
+        groq`*[_type == "page" && slug.current == $slug][0]{
+        _id,
+        _createdAt,
+        "slug": slug.current,
+        "image": images.asset->url,
+        content
+    }`,
+        { slug },
+    );
+};

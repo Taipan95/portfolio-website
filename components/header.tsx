@@ -2,7 +2,11 @@ import NavbarSection from '@/components/sections/navbar-section';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Header() {
+interface IProps {
+    heroImage: string;
+}
+
+export default function Header({ heroImage }: IProps) {
     return (
         <header className='text-primary'>
             <div className='flex justify-center gap-4 py-4'>
@@ -44,9 +48,9 @@ export default function Header() {
                             </Link>
                         </div>
                     </div>
-                    <div className='relative mx-auto aspect-video overflow-hidden rounded-lg object-cover sm:w-full lg:order-last lg:aspect-square'>
+                    <div className='relative mx-auto aspect-video overflow-hidden rounded-full object-cover sm:w-full lg:order-last lg:aspect-square'>
                         <Image
-                            src='https://github.com/sakisev.png'
+                            src={heroImage || ''}
                             width='550'
                             height='550'
                             alt='Sakis Evangelou'

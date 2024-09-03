@@ -3,15 +3,20 @@ import ContactSection from '@/components/sections/contact';
 import ProjectsSection from '@/components/sections/projects';
 import SkillsSection from '@/components/sections/skills';
 import WorkSection from '@/components/sections/work';
-import { getProjects, getWorkExperienceItems } from '@/sanity/sanity-utils';
+import {
+    getPage,
+    getProjects,
+    getWorkExperienceItems,
+} from '@/sanity/sanity-utils';
 
 export default async function Home() {
     const cards = await getWorkExperienceItems();
     const projects = await getProjects();
+    const homePage = await getPage('home');
 
     return (
         <main className='flex-1'>
-            <Header />
+            <Header heroImage={homePage.image} />
             <WorkSection cards={cards} />
             <ProjectsSection projects={projects} />
             <SkillsSection />
