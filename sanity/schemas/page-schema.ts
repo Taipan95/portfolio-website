@@ -11,6 +11,19 @@ const pageSchema = {
             options: { source: 'title', maxLength: 96 },
         },
         {
+            name: 'images',
+            title: 'Images',
+            type: 'image',
+            options: { hotspot: true },
+            fields: [
+                {
+                    name: 'alt',
+                    title: 'Alt',
+                    type: 'string',
+                },
+            ],
+        },
+        {
             name: 'content',
             title: 'Content',
             type: 'array',
