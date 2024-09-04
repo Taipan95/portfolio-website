@@ -10,7 +10,7 @@ export default function WorkItem({
     short_description,
 }: WorkExperience) {
     return (
-        <div className='bg-accent rounded-lg shadow-lg overflow-hidden flex flex-col'>
+        <div className='from-accent to-transparent border rounded-lg shadow-lg overflow-hidden flex flex-col'>
             <Image
                 src={image || '/placeholder.svg'}
                 width='550'

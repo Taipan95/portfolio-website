@@ -1,4 +1,4 @@
-import { Project, WorkExperience } from '@/lib/types';
+import { HomepageHeader, Page, Project, WorkExperience } from '@/lib/types';
 import client from '@/sanity/config/client-config';
 import { groq } from 'next-sanity';
 
@@ -64,7 +64,7 @@ export const getProject = async (slug: string): Promise<Project> => {
     );
 };
 
-export const getPages = async (): Promise<Project[]> => {
+export const getPages = async (): Promise<Page[]> => {
     return client.fetch(groq`*[_type=="page"]{
         _id,
         _createdAt,
@@ -74,7 +74,7 @@ export const getPages = async (): Promise<Project[]> => {
     }`);
 };
 
-export const getPage = async (slug: string): Promise<Project> => {
+export const getPage = async (slug: string): Promise<Page> => {
     return client.fetch(
         groq`*[_type == "page" && slug.current == $slug][0]{
         _id,
@@ -84,5 +84,20 @@ export const getPage = async (slug: string): Promise<Project> => {
         content
     }`,
         { slug },
+    );
+};
+
+export const getHomepageHeader = async (): Promise<HomepageHeader> => {
+    return client.fetch(
+        groq`*[_type == "header" && slug.current == "home-page"][0]{
+        _id,
+        _createdAt,
+        title,
+        "slug": slug.current,
+        "image": image.asset->url,
+        content,
+        linkedInUrl,
+        gitHubUrl
+    }`,
     );
 };
