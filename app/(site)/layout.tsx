@@ -18,11 +18,6 @@ export default function RootLayout({
     return (
         <html lang='en' className={'scroll-smooth'}>
             <body className={`${inter.className} dark`}>
-                {/*<header className='text-primary'>*/}
-                {/*    <div className='flex justify-center gap-4 py-4'>*/}
-                {/*        <NavbarSection />*/}
-                {/*    </div>*/}
-                {/*</header>*/}
                 {children}
             </body>
         </html>
