@@ -22,3 +22,25 @@ export interface Project {
     _id: string;
     slug: string;
 }
+
+export interface Page {
+    _createdAt: string;
+    _id: string;
+    name: string;
+    slug: string;
+    title: string;
+    content: PortableTextBlock[];
+    image: string;
+}
+
+export interface HomepageHeader {
+    _createdAt: string;
+    _id: string;
+    name: string;
+    slug: string;
+    title: string;
+    image: string;
+    linkedInUrl: string;
+    gitHubUrl: string;
+    content: PortableTextBlock[];
+}

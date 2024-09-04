@@ -16,9 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' className={'scroll-smooth'}>
-            <body
-                className={`${inter.className} flex flex-col justify-center items-center dark`}
-            >
+            <body className={`${inter.className} dark`}>
                 {children}
             </body>
         </html>
